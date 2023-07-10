@@ -1,0 +1,1087 @@
+<style>
+    :root {
+    --main-bg-color: #ededed;
+    --custom-bg-buttosdn: #6E98FF;
+    --custom-bg-button: #000;
+}
+
+body.home-gaia {
+    overflow-x: hidden
+}
+
+.beneficios-wrapper.container {
+    margin: 0px auto 40px auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+#home-hero.home-campaign .sliderContainer {
+    position: relative
+}
+
+#home-hero.home-campaign .sliderContainer {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%
+}
+
+#home-hero.home-campaign .slider-home-hero-banner {
+    width: 100%;
+    margin: 0 auto
+}
+
+#home-hero.home-campaign .sliderContainer.campaign-hero .slider-home-hero-banner {
+    width: 100%;
+    margin: 0 auto;
+    max-height: 100%;
+    min-height: auto;
+}
+
+#home-hero-section-page .btnGaia {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 12px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+    outline: 0;
+    font-family: GothamBook, Arial, sans-serif;
+    font-size: 12px;
+    vertical-align: middle;
+    position: relative
+}
+
+.btnGaia-icon:hover,
+.btnGaia-icon:focus {
+    text-decoration: none;
+}
+
+.btn-rounded {
+    border-radius: 100px;
+}
+
+#home-hero-section-page p:empty,
+#home-hero-section-page p:has('&nbsp;') {
+    display: none
+}
+
+#home-hero .slide-container .btnGaia-icon {
+    position: relative;
+    display: flex;
+    min-width: 250px;
+}
+
+#home-hero .slide-container .btnGaia-icon::after {
+    color: inherit;
+    content: "\e902";
+    display: inline-flex;
+    font-family: 'gaia-icons' !important;
+    margin: 0 0 0 6px;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+    align-self: center;
+    justify-self: flex-end;
+    position: absolute;
+    left: 70%;
+    opacity: 0;
+    top: auto;
+    bottom: auto;
+    font-size: 120%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#home-hero .slide-container .btnGaia-icon:hover::after,
+#home-hero .slide-container .btnGaia-icon:focus::after {
+    left: 85%;
+    opacity: 1;
+}
+
+#home-wrapper #home-hero.home-campaign .container {
+    margin: 0 auto !important
+}
+
+#home-hero.home-campaign {
+    min-height: 100% !important
+}
+
+#home-wrapper {
+    overflow-x: hidden;
+    padding: 0
+}
+
+#secondary-cta {
+    position: relative;
+    z-index: 999999
+}
+
+.btnGaia-white {
+    background: #fff
+}
+
+.btnGaia-black {
+    background: #010101;
+    color: #fff !important;
+    opacity: 0.8;
+}
+
+.btnGaia-black:focus,
+.btnGaia-black:hover,
+.btnGaia-white:focus,
+.btnGaia-white:hover {
+    opacity: 1
+}
+
+.btnGaia-yellow {
+    background-color: #f7b70d
+}
+
+.btnGaia-yellow:focus,
+.btnGaia-yellow:hover {
+    background-color: #e0a50a
+}
+
+.btnGaia-custom {
+    background-color: var(--custom-bg-button);
+    border: 0 transparent !important
+}
+
+.btnGaia-custom:focus,
+.btnGaia-custom:hover {
+    opacity: .7
+}
+
+.btn-custom-promo {
+    max-width: 100%;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+
+.video-container video.video {
+    display: block;
+    object-fit: cover
+}
+
+video::-webkit-media-controls {
+    display: none
+}
+
+.abs-container {
+    position: absolute
+}
+
+.slide-wrapper {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    clear: both;
+    margin: 0 auto
+}
+
+.slide-wrapper .slide-container {
+    width: auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    height: auto
+}
+
+.slide-wrapper .wrapper-buttons {
+    display: block;
+    clear: both;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.slide-wrapper .wrapper-buttons a {
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.slide-wrapper .slide-container .txt-content {
+    min-height: 100%;
+    width: auto;
+    max-width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    z-index: 1
+}
+
+.slide-wrapper .slide-container .top-img {
+    width: 100%;
+    display: block;
+    margin: 0 auto 0px auto
+}
+
+.slide-wrapper .slide-container .bottom-img {
+    display: block;
+    clear: both;
+    width: 90%
+}
+
+.slide-wrapper .slide-container .top-img img {
+    width: 100%;
+    height: auto
+}
+
+.inner-row-hero .top-img {
+    transition: all .3s ease;
+}
+
+.inner-row-hero .top-img:hover,
+.row.inner-row-hero .top-img:focus {
+    transition: transform .2s ease-in-out;
+    transform: scale(1.045);
+}
+
+.link-btn:hover+.top-img {
+    transition: transform .2s ease-in-out;
+    transform: scale(1.045);
+}
+
+.slide-wrapper .content-media {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+.slide-wrapper .content-media .content-img {
+    position: relative;
+    height: auto;
+    overflow-y: hidden;
+    width: 100%
+}
+
+.slide-wrapper .content-media .content-img img {
+    width: 100%;
+    height: auto
+}
+
+.slide-wrapper .content-media .video-container {
+    background: transparent url('');
+    height: 100%;
+    width: 100%;
+    display: block
+}
+
+.slide-wrapper .content-media .video-container video.video {
+    display: block;
+    object-fit: cover;
+    height: 100%
+}
+
+.wrapper-tycs {
+    position: relative;
+    bottom: 0px;
+    text-align: initial;
+}
+
+.wrapper-tycs p {
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: normal;
+    display: block;
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
+    margin: 0 auto
+}
+
+.bottomtxt br {
+    display: none
+}
+
+.hotspot-dot:focus,
+.hotspot-dot:hover {
+    background: #fff
+}
+
+#hsp-1 {
+    position: relative
+}
+
+#home-hero.home-campaign .col-inner-full {
+    display: block;
+    clear: both;
+    width: 100%;
+    float: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#gaia-multi-slide .txt-content {
+    width: 100%;
+}
+
+#gaia-multi-slide .inner-row-hero {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-items: center;
+    min-height: auto;
+    height: auto;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+#gaia-multi-slide .top-img {
+    width: 100%;
+    max-width: 300px;
+}
+
+#home-hero.home-campaign #mobile-slider-wrapper.sliderContainer {
+    display: none;
+}
+
+#home-hero.home-campaign .col-hh-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: stretch;
+    height: 100%;
+    min-height: auto;
+    padding: 0px;
+}
+
+#home-carousel.carousel {
+    position: relative;
+    display: block;
+    clear: both;
+    float: left;
+    height: 100%;
+}
+
+#home-carousel.carousel .carousel-inner {
+    height: 100%;
+}
+
+#home-carousel.carousel .carousel-item.item {
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+#home-carousel.carousel .carousel-item.item.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+#home-carousel.carousel .carousel-item.item .carousel-caption.on-center {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+    top: auto;
+    bottom: auto;
+}
+
+#home-carousel.carousel .carousel-item.item .carousel-caption.on-center {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+#home-hero.home-campaign .btnGaia {
+    display: block;
+    margin: 0px auto;
+}
+
+.inner-slide-wrapper {
+    display: inline-flex;
+    clear: both;
+    margin: 0px auto;
+}
+
+#inner-promos-slider {
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.col-hh-item picture {
+    display: block;
+}
+
+
+#hh-item-left {
+    min-height: 520px;
+}
+
+#home-hero.home-campaign .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+}
+
+#home-hero.home-campaign .carousel-indicators li {
+    display: inline-block;
+    width: 24px;
+    height: 8px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin: 0 10px;
+
+}
+
+#home-hero.home-campaign .carousel-indicators li.active {
+    width: 24px;
+    height: 8px;
+    background-color: #ffffff;
+}
+
+@media only screen and (min-width:1175px),
+(min-device-width:1175px) {
+    .sliderContainer .slider-home-hero-banner .slide-wrapper .slide-container {
+        min-height: auto !important
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1174px),
+(min-device-width:768px) and (max-device-width:1174px) {
+    .sliderContainer .slider-home-hero-banner .slide-1 .slide-wrapper .slide-container {
+        background-size: cover !important
+    }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1174px) and (orientation:portrait) {
+    .sliderContainer .slider-home-hero-banner .slide-1 .slide-wrapper .slide-container {
+        background-size: cover !important
+    }
+}
+
+@media only screen and (max-width :767px),
+(max-device-width:767px) {
+
+    .pxsm-0 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    body div.wrapper {
+        padding-top: 0
+    }
+
+    .column.main {
+        padding: 0px;
+    }
+
+    .btnGaia {
+        width: 90%
+    }
+
+    .slide-wrapper .slide-container .txt-content {
+        height: auto;
+        max-width: 100%;
+        padding-top: 0;
+    }
+
+    .bottomtxt br {
+        display: block
+    }
+
+    #home-carousel.carousel .carousel-item.item .carousel-caption.on-center {
+        position: relative !important;
+    }
+
+    #banner-slider-carousel .owl-dots,
+    #home-hero.home-campaign .owl-dots {
+        bottom: 0 !important;
+        top: auto !important;
+        display: none !important
+    }
+
+    #home-hero.home-campaign .sliderContainer.campaign-hero .slider-home-hero-banner {
+        min-height: auto !important;
+        padding: 0px;
+    }
+
+    #gaia-multi-slide .inner-row-hero {
+        height: auto;
+        min-height: auto;
+    }
+
+    #gaia-multi-slide .inner-row-hero .inner-col-hh-item {
+        display: flex;
+        align-items: center;
+        flex-wrap: inherit;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #hh-item-left {
+        min-height: auto !important;
+    }
+
+
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 0 0 #131313
+    }
+
+    to {
+        box-shadow: 0 0 0 15px transparent
+    }
+}
+</style>
+<style>
+    #hh-campaign-on-going #home-carousel.carousel .carousel-item.item .carousel-caption.on-center {
+    align-items: normal;
+    align-content: normal;
+    justify-content: normal;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    text-shadow: none;
+}
+
+#hh-campaign-on-going #gaia-multi-slide .top-img {
+    width: 100%;
+    max-width: 500px;
+}
+
+#hh-campaign-on-going #hh-item-left .wrapper-tycs {
+    padding: 0;
+    width: auto;
+    display: inline-flex;
+    position: static;
+    float: right;
+    align-self: flex-end;
+    font-size: 12px;
+}
+
+
+#hh-campaign-on-going #hh-item-left #cta-tycs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 0;
+    position: relative;
+    padding-right: 0px;
+    top: 0px;
+}
+
+#hh-campaign-on-going #hh-item-left #cta-slide-campaign-b #cta-tycs {
+    top: -100px;
+}
+
+
+#hh-campaign-on-going #hh-item-left .wrapper-buttons {
+    display: inline-flex;
+    align-items: normal;
+    justify-content: normal;
+    flex-direction: column;
+    position: static;
+    margin-top: 20px;
+}
+
+#hh-campaign-on-going #hh-item-left .top-img{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: normal;
+    margin: 0 0 20px 0 !important;
+    position:  relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+    row-gap:  20px;
+}
+
+
+#hh-campaign-on-going #hh-item-right .top-img {
+    margin: 0;
+}
+
+#hh-campaign-on-going #hh-item-right #cta-banner-row-b .top-img {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 20px;
+}
+
+#hh-campaign-on-going #hh-item-right #cta-banner-row-b .wrapper-buttons {
+    display: inline-flex;
+    width: 100% !important;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+#hh-campaign-on-going .link-btn {
+    color: #3B414B;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#hh-campaign-on-going .link-btn span {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#hh-campaign-on-going .copy-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    align-content: space-between;
+    align-items: stretch;
+    justify-content: center;
+
+}
+
+.wrapper-buttons:hover+.top-img {
+    transition: transform .2s ease-in-out;
+    transform: scale(1.045);
+}
+
+
+
+#hh-campaign-on-going #cta-banner-row-a h1.top-img {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+#hh-campaign-on-going #hh-item-left #cta-slide-campaign-a .first-txt-description {
+    top: 0px;
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+}
+
+#hh-campaign-on-going #hh-item-left #cta-slide-campaign-a .second-text-description {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    max-width: 55%;
+}
+    
+#hh-campaign-on-going #hh-item-left #cta-slide-campaign-b .carousel-caption.on-center {
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+}
+
+#hh-campaign-on-going #gaia-multi-slide #cta-slide-campaign-b .top-img {
+    max-width: 70%;
+    top: 10%;
+}
+
+    #cta-banner-row-b .copy-wrapper .wrapper-tycs {
+        position: absolute;
+        bottom: 10px;
+        text-align: initial;
+        right: 20px;
+    }
+
+
+
+
+@media screen and (min-width: 2100px) {
+    .inner-col-hh-item {
+        background-position: center 0px !important;
+        background-size:  contain !important;
+    }
+}
+
+
+@media only screen and (min-width: 1175px),
+(min-device-width:1175px) {
+    .sliderContainer .slider-home-hero-banner .slide-wrapper .slide-container {
+        min-height: auto !important
+    }
+}
+
+
+
+@media only screen and (max-width :767px),
+(max-device-width:767px) {
+
+
+#home-hero.home-campaign .carousel-indicators {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: #000;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+    #hh-campaign-on-going .btn-md-gaia {
+        max-width: 120px !important;
+        width: 100%;
+    }
+
+    #hh-campaign-on-going #home-carousel.carousel {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+    #hh-campaign-on-going #home-carousel.carousel .carousel-item.item .carousel-caption.on-center {
+        height: 340px;
+        align-items: normal;
+        justify-content: normal;
+        padding:  10px 10px;
+    }
+
+
+    #hh-campaign-on-going #hh-item-left {
+        min-height: 340px !important;
+        height: auto !important;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between !important;
+    }
+
+    #hh-campaign-on-going #hh-item-left #cta-slide-campaign-a {
+        background: url('https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_bg_principal_julio_preventa_mobile.jpg') no-repeat #000 !important;
+        background-size: 100% 100% !important;
+        background-position: 0px 0px !important;
+    }
+
+
+
+    #hh-campaign-on-going #hh-item-left #cta-slide-campaign-a .carousel-caption .top-img {
+        max-width: 100%;
+        height:  auto;
+        justify-content: normal;
+        margin-bottom:  0 !important;
+        row-gap:  20px;
+    }
+
+    #hh-campaign-on-going #hh-item-left #cta-slide-campaign-a .carousel-caption .first-txt-description {
+        width: 100%;
+        max-width: 65%;
+        margin: 0px 0 0;
+        top: 0;
+    }
+
+    #hh-campaign-on-going #hh-item-left #cta-slide-campaign-a .carousel-caption .second-text-description {
+        width: 100%;
+        max-width: 50%;
+        top: 0;
+    }
+
+    #hh-campaign-on-going #hh-item-left .carousel-caption #cta-tycs {
+        top: 0px;
+    }
+
+    #hh-campaign-on-going #hh-item-left #cta-slide-campaign-b .carousel-caption {
+        justify-content: flex-end;
+        padding-bottom: 20px;
+    }
+
+    #hh-campaign-on-going #hh-item-left #cta-slide-campaign-b .carousel-caption .top-img {
+        margin-bottom: 16px !important;
+        display: block;
+        position: static;
+        max-width: 90%;
+    }
+
+    
+
+    #hh-campaign-on-going #hh-item-left .wrapper-buttons {
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #hh-campaign-on-going .copy-wrapper {
+        width: 100%;
+        padding-left: 0px;
+        justify-content: normal;
+    }
+
+
+    #hh-campaign-on-going .copy-wrapper .top-img {
+        max-width: 100%;
+        margin: 0px auto;
+    }
+
+    #hh-campaign-on-going #cta-banner-row-a {
+        display: inline-flex;
+        justify-content: flex-start !important;
+        align-items: center;
+        flex-wrap: wrap;
+        background: url('https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hhh_bg_ofertasflash_julio_preventa_mobile.jpg') no-repeat 0px 0px / 100% #FCBE09!important;
+        padding-top: 14px;
+        height: 260px !important;
+        align-content: center !important;
+        align-items: center;
+        justify-content: flex-start !important;
+    }
+
+    #hh-campaign-on-going #cta-banner-row-a .copy-wrapper {
+        position: relative;
+        top: 0px;
+        align-items: center;
+        align-content: center;
+        justify-content: normal;
+    }
+
+    #hh-campaign-on-going #cta-banner-row-a h1.top-img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 130px;
+        text-align: center;
+        margin-bottom: 4px;
+        margin-top: 6px;
+    }
+
+
+
+    #hh-campaign-on-going #cta-banner-row-b {
+        display: inline-flex;
+        justify-content: flex-start !important;
+        align-content: center !important;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 14px 0;
+        height: 260px !important;
+        background: url('https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_bg_sillas_julio_preventa_mobile.jpg') no-repeat 0px 0px / 100% #8FABAF !important;
+
+    }
+
+    #hh-campaign-on-going #cta-banner-row-b .copy-wrapper {
+        height: 100%;
+        position: relative;
+        margin-top: 0;
+    }
+
+
+
+    #hh-campaign-on-going #hh-item-right #cta-banner-row-b .copy-wrapper .wrapper-buttons {
+        margin: 0px auto 10px auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hh-campaign-on-going #hh-item-right #cta-banner-row-b .copy-wrapper .wrapper-tycs {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #hh-campaign-on-going #hh-item-right #cta-banner-row-b .copy-wrapper .wrapper-tycs a {
+        font-size: 11px !important;
+    }
+
+
+    #hh-campaign-on-going #hh-item-right #cta-banner-row-b .copy-wrapper .top-img {
+        width: 100%;
+        max-width: 70%;
+        display: block;
+        margin: 0px auto 12px auto !important;
+    }
+
+
+
+    #hh-campaign-on-going .slide-wrapper .wrapper-buttons a.btn-rounded {
+        font-size: 1.2rem !important;
+        height: 32px !important;
+        min-width: 130px !important;
+    }
+
+    #hh-item-right .inner-row-hero .inner-col-hh-item .copy-wrapper .wrapper-buttons {
+        margin: 3px auto 10px auto;
+    }
+
+    #hh-campaign-on-going .slide-wrapper .wrapper-buttons #cta-btn-main-banner {
+    min-width: 160px !important;
+    }
+
+}
+</style>
+<section class="home--section home-campaign" id="home-hero">
+    <div class="row-fluid" id="hh-campaign-on-going">
+        <div class="col-inner-full pxsm-0">
+            <div id="home-hero-carousel-main-wrapper">
+                <div class="sliderContainer campaign-hero" id="static-banner-wrapper">
+                    <div id="home-hero-banner-static" class="slider-home-hero-banner">
+                        <div class="slide-multiple">
+                            <div class="slide-item slide-wrapper" id="gaia-multi-slide">
+                                <div class="slide-container row d-flex">
+                                    <div class="col-inner-full">
+                                        <div class="row inner-row-hero">
+                                            <div class="col-md-6 col-xs-12 col-hh-item" id="hh-item-left" style="height: 520px;">
+                                                <div id="home-carousel" class="carousel slide" data-ride="carousel">
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="carousel-item item active" onclick="window.location='https://gaiadesign.com.mx/hometime.html';" id="cta-slide-campaign-a" style="background: url('https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_bg_principal_julio_preventa_desktop.jpg') no-repeat 0px 0px / 100% 100% #000; cursor: pointer;">
+                                                            <div class="carousel-caption on-center">
+                                                                <h1 class="top-img" title="GAIA Design todo para tu hogar">
+                                                                    <picture class="first-txt-description">
+                                                                        <source srcset="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt_principal_julio_preventa_desktop.png" media="(min-width: 768x)">
+                                                                        <source srcset="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt1_principal_julio_preventa_mobile.png" media="(max-width: 767px)">
+                                                                        <img src="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt_principal_julio_preventa_desktop.png" width="100%" height="100%" alt="Ofertas GAIA" title="Renueva tu hogar con las ofertas que tenemos para ti" class="img-fluid">
+                                                                    </picture>
+                                                                    <picture class="second-text-description">
+                                                                        <source srcset="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt2_principal_julio_preventa_desktop.png" media="(min-width: 768x)">
+                                                                        <source srcset="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt2_principal_julio_preventa_mobile.png" media="(max-width: 767px)">
+                                                                        <img src="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt2_principal_julio_preventa_desktop.png" width="100%" height="100%" alt="Ofertas GAIA" title="Renueva tu hogar con las ofertas que tenemos para ti" class="img-fluid">
+                                                                    </picture>
+                                                                </h1>
+                                                                <div id="cta-tycs">
+                                                                    <div class="wrapper-buttons" style="clear: both; text-align: center; width: auto">
+                                                                        <a href="https://gaiadesign.com.mx/hometime.html" id="cta-btn-main-banner" class="btnGaia-icon btn-rounded btn-md-gaia" style="background: #000000; color: #f0f0f0; height: 49px; padding: 0px 20px;">Comprar
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="wrapper-tycs">
+                                                                        <a href="/terminos-y-condiciones-hotsale.html" style="text-decoration: underline; color: #fff; padding-right: 4px;">*Consulta términos y condiciones.</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12 col-hh-item" id="hh-item-right">
+                                                <div class="row inner-row-hero">
+                                                    <div class="col-md-12 col-sm-6 col-xs-6 inner-col-hh-item" id="cta-banner-row-a" onclick="window.location=' https://www.gaiadesign.com.mx/ofertas-flash.html';" style="background: url('https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hhh_bg_ofertasflash_julio_preventa_desktop.jpg') no-repeat 0px 0px / cover #FCBE09;min-height: 260px;display: inline-flex;flex-wrap: wrap;cursor: pointer;height: 260px;flex-direction: column;align-content: flex-start;justify-content: center;">
+                                                        <div class="copy-wrapper">
+                                                            <h1 class="top-img">
+                                                                <picture>
+                                                                    <source srcset="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt_ofertasflash_julio_preventa_desktop.png" media="(min-width: 768x)">
+                                                                    <source srcset="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt_ofertasflash_julio_preventa_mobile.png" media="(max-width: 767px)">
+                                                                    <img src="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt_ofertasflash_julio_preventa_desktop.png" width="100%" height="100%" alt="Arma tu espacio con GAIA" title="Arma tu espacio con estas ofertas flash" class="img-fluid">
+                                                                </picture>
+                                                            </h1>
+                                                            <div class="wrapper-buttons" style="clear: both; text-align: center; width: auto">
+                                                                <a href=" https://www.gaiadesign.com.mx/ofertas-flash.html" id="cta-btn-row-a" class="btnGaia-icon btn-rounded btn-md-gaia" style="background: #000; color: #f0f0f0; height: 49px; padding: 0px 20px;">Ver Ofertas
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-6 col-xs-6 inner-col-hh-item" id="cta-banner-row-b" onclick="window.location='https://www.gaiadesign.com.mx/muebles/sillas.html?ava=true';" style="background: url('https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_bg_sillas_julio_preventa_desktop.jpg') no-repeat 0px top / cover #8FABAF;min-height: 260px;display: inline-flex;flex-wrap: wrap;cursor: pointer;height: 260px;flex-direction: column;align-content: flex-start;justify-content: center;">
+                                                        <div class="copy-wrapper">
+                                                            <h1 class="top-img">
+                                                                <picture>
+                                                                    <source srcset="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt_sillas_julio_preventa_desktop.png" media="(min-width: 768x)">
+                                                                    <source srcset="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt_sillas_julio_preventa_mobile.png" media="(max-width: 767px)">
+                                                                    <img src="https://opt.moovweb.net/?quality=80&img=https://www.gaiadesign.com.mx/media/wysiwyg/home/2023/julio/hh_txt_sillas_julio_preventa_desktop.png" width="100%" height="100%" alt="Ofertas de GAIA Design" title="Descúbre tu espacio con GAIA" class="img-fluid">
+                                                                </picture>
+                                                            </h1>
+                                                            <div class="wrapper-buttons" style="clear: both; text-align: center; width: auto">
+                                                                <a href="https://www.gaiadesign.com.mx/muebles/sillas.html?ava=true" id="cta-btn-row-b" class="btnGaia-icon btn-rounded btn-md-gaia" style="background: #000; color: #f0f0f0 ; height: 49px; padding: 0px 20px;">Ver Piezas
+                                                                </a>
+                                                                <!--<div class="wrapper-tycs">
+                                                                    <a href="/terminos-y-condiciones-de-promociones" style="text-decoration: underline; color: #000;">*Consulta términos y condiciones.</a>
+                                                                </div>-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" defer>
+//document.addEventListener('DOMContentLoaded', (event) => {});
+require(['jquery'], function($) {
+
+    function equalHeight() {
+        var maxHeight = 0;
+        jQuery(".col-hh-item").each(function() {
+            if (jQuery(this).height() > maxHeight) {
+                maxHeight = jQuery(this).height();
+            }
+        });
+        jQuery(".col-hh-item, .inner-row-hero").height(maxHeight);
+        jQuery(".inner-col-hh-item").height(maxHeight / 2);
+    }
+
+    if (window.innerWidth > 767) {
+        setTimeout(function() {
+
+            equalHeight();
+
+        }, 2000)
+    } else {}
+
+});
+</script>
