@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Montserrat:wght@400;600&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:wght@400;600&family=Roboto:wght@100;300;400&display=swap');
 
 body {
     letter-spacing: normal;
     background: inherit;
     position: relative;
 
-    &::after {
+    &::before {
         position: fixed;
         top: -50%;
         left: -50%;
@@ -21,6 +21,11 @@ body {
         content: "";
     }
 }
+
+.atail-text-logo {
+    height: 100px !important;
+}
+
 
 .bg-static {
     position: fixed;
@@ -69,14 +74,7 @@ li.more-links.menu-item-has-children {
     visibility: hidden;
 }
 
-.right-side {
-    display: block;
-    border-left: 0;
-}
 
-.grid-bg>div {
-    border: 0 !important;
-}
 
 .wndh-site {
     .atail-preloader {
@@ -90,6 +88,22 @@ li.more-links.menu-item-has-children {
             background-color: #f0f0f0;
         }
     }
+
+    .side-content {
+        z-index: 99;
+
+        a {
+            cursor: pointer !important;
+            color: inherit;
+            z-index: 10;
+
+            &:hover {
+                text-decoration: underline;
+
+            }
+        }
+    }
+
 
     .project-count {
         visibility: hidden;
@@ -105,7 +119,8 @@ li.more-links.menu-item-has-children {
     .preview-text-content {
         p {
             font-family: 'Hind', sans-serif !important;
-            font-weight: lighter;
+            font-weight: 300;
+            padding-right: 14px;
         }
     }
 
@@ -162,12 +177,30 @@ li.more-links.menu-item-has-children {
         color: #fff;
     }
 
+    .project-preview-arrow {
+        color: #ffff;
+        opacity: 1;
+    }
+
+    .right-side {
+        display: block;
+        border-left: 0;
+    }
+
+    .grid-bg>div {
+        border: 0 !important;
+    }
+
     .menu-menu-1 li a {
         color: #fff;
     }
 
     .menu-menu-1 li a:hover {
         color: #f0f0f0;
+    }
+
+    .preview-text-content {
+        font-weight: 300;
     }
 
     .full-post-content {
@@ -183,6 +216,24 @@ li.more-links.menu-item-has-children {
 
 #wndh-bulletins {
     background: #ffafcb no-repeat 0px 0px / cover;
+
+
+    .right-side {
+        border-color: #edf5f836;
+    }
+
+    .grid-bg>div {
+        border-color: #edf5f836;
+    }
+
+    .side-content {
+        a {
+            color: #f0f0f0;
+            font-weight: normal;
+        }
+    }
+
+
 
     .bulletin-item {
         display: flex;
@@ -217,6 +268,7 @@ li.more-links.menu-item-has-children {
         .blog-list-info {
             display: inline-flex;
             flex-wrap: wrap;
+            color: #000;
 
             .bulletin-date {
                 font-size: 13px;
@@ -233,6 +285,7 @@ li.more-links.menu-item-has-children {
                 font-family: 'Roboto', sans-serif;
                 margin-bottom: 0;
                 align-self: flex-end;
+                color: #000;
             }
         }
 
@@ -253,6 +306,34 @@ li.more-links.menu-item-has-children {
     }
 }
 
+#wndh-single-bulletins {
+
+    .atail-post-navigation {
+        text-transform: uppercase;
+        a:hover {
+            background-color: #efefef;
+            color: #ca4a26;
+        }
+    }
+
+    .post-content-info * {
+        color: #000;
+    }
+
+    .post-content-text {
+        p {
+            color: #000;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+        }
+    }
+
+    figcaption {
+        color: #000;
+    }
+}
+
 
 #wndh-archive {
     .right-side {
@@ -264,6 +345,10 @@ li.more-links.menu-item-has-children {
     }
 
     .simple-post {
+
+        .blog-info {
+            color: #000;
+        }
         .blog-category-link {
             color: #000;
             display: block;
@@ -273,7 +358,6 @@ li.more-links.menu-item-has-children {
         .blog-title {
             color: #000;
             font-size: 24px;
-            line-height: normal;
             margin-bottom: 2px;
             font-family: 'Hind', sans-serif;
 
@@ -289,12 +373,14 @@ li.more-links.menu-item-has-children {
             font-weight: bold;
             color: #000;
             margin-top: 6px;
+            margin-bottom: 0;
         }
 
         .blog-info {
             .blog-date {
                 font-size: 13px;
                 font-family: 'Roboto', sans-serif;
+                margin-bottom: 20px;
             }
 
             .blog-text {
@@ -329,6 +415,21 @@ li.more-links.menu-item-has-children {
 #wndh-bio {
     background: #000 no-repeat 0px 0px / cover;
 
+    .right-side {
+        border-color: #edf5f836;
+    }
+
+    .grid-bg>div {
+        border-color: #edf5f836;
+    }
+
+    .side-content {
+        a {
+            color: #f0f0f0;
+            font-weight: normal;
+        }
+    }
+
     #intro-bio {
         color: #fff;
 
@@ -340,7 +441,7 @@ li.more-links.menu-item-has-children {
 
         p {
             font-family: 'Roboto', sans-serif;
-            font-weight: lighter;
+            font-weight: 300;
             font-size: 18px;
 
         }
@@ -368,7 +469,7 @@ li.more-links.menu-item-has-children {
             color: #fff;
             font-size: 13px;
             font-family: 'Roboto', sans-serif;
-            font-weight: lighter;
+            font-weight: 300;
         }
     }
 

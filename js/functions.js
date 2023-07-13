@@ -71,14 +71,14 @@ class Sides extends HTMLElement {
 			        <div class=" container-fluid ">
 			            <div class="left-side">
 			                <div class="side-content">
-			                    <a href="#"> Instagram </a>
+			                    <a href="https://www.instagram.com/worrynoisedirtheat/" target="_blank"> Instagram </a>
 			                </div>
 			            </div>
 
 			            <div class="right-side">
 			                <div class="side-content">
 			                    <p class="copyright">
-			                        © 2023 WNDH - All rights reserved </p>
+			                        © 2023 Worry Noise Dirt Heat · <a href="https://gisselasaune.com/"  target="_blank" style="margin-right: 8px;">Design by Gissela Sauñe</a> · <a href="https://www.alonsoct.dev/" target="_blank">Custom by Alonso Caballero</a> </p>
 			                </div>
 			            </div>
 			        </div>
