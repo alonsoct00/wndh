@@ -78,7 +78,7 @@ class Sides extends HTMLElement {
 			            <div class="right-side">
 			                <div class="side-content">
 			                    <p class="copyright">
-			                        © 2023 Worry Noise Dirt Heat · <a href="https://gisselasaune.com/"  target="_blank" style="margin-right: 8px;">Design by Gissela Sauñe</a> · <a href="https://www.alonsoct.dev/" target="_blank">Custom by Alonso Caballero</a> </p>
+			                        © 2023 Worry Noise Dirt Heat · <a href="https://gisselasaune.com/"  target="_blank" style="margin-right: 8px;">Design by Gissela Sauñe</a> · <a href="https://www.alonsoct.dev/" target="_blank">Custom by Alonso Caballero</a></p>
 			                </div>
 			            </div>
 			        </div>
