@@ -570,8 +570,43 @@ li.more-links.menu-item-has-children {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 767px) {
-    .atail-text-logo {
-        height: inherit;
+
+
+    header {
+        .atail-text-logo {
+            height: inherit;
+        }
+
+        picture {
+            width: 40px;
+            display: inline-block;
+            margin: 0px auto;
+        }
+    }
+
+
+    nav,
+    nav.row {
+        background-color: #f0f0f0;
+    }
+
+    nav {
+
+        #menu-menu-1 li a *,
+        li:before {
+            color: #000000 !important;
+        }
+    }
+
+    nav.row:before,
+    nav:before {
+        color: #000000 !important;
+    }
+
+    .nav-list a.current-item {
+        font-weight: 900;
+        display: inline-block;
+        border-bottom: 1px solid #000;
     }
 }
 
