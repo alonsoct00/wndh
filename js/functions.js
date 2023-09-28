@@ -72,7 +72,7 @@ class Sides extends HTMLElement {
 			            <div class="left-side">
 			                <div class="side-content">
 			                    <a href="https://www.instagram.com/worrynoisedirtheat/" target="_blank"> Instagram </a>
-                                <a href="https://worrynoisedirtheat.bandcamp.com/" target="_blank"> Bandcamp </a>
+                                <a href="https://worrynoisedirtheat.bandcamp.com/music" target="_blank"> Bandcamp </a>
                                 <a href="#" target="_blank"> Fractured Atlas </a>
 			                </div>
 			            </div>
