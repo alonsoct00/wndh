@@ -71,9 +71,9 @@ class Sides extends HTMLElement {
 			        <div class=" container-fluid ">
 			            <div class="left-side">
 			                <div class="side-content">
-			                    <a href="https://www.instagram.com/worrynoisedirtheat/" target="_blank"> Instagram </a>
-                                <a href="https://worrynoisedirtheat.bandcamp.com/music" target="_blank"> Bandcamp </a>
-                                <a href="#" target="_blank"> Fractured Atlas </a>
+			                    <a href="https://www.instagram.com/worrynoisedirtheat/" target="_blank"> Social </a>
+                                <a href="https://worrynoisedirtheat.bandcamp.com/music" target="_blank"> Store </a>
+                                <a href="https://fundraising.fracturedatlas.org/worry-noise-dirt-heat" target="_blank"> Support </a>
 			                </div>
 			            </div>
 
