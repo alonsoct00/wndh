@@ -65,8 +65,7 @@ class NavMenu extends HTMLElement {
 //Sides
 class Sides extends HTMLElement {
     connectedCallback() {
-        this.innerHTML =
-            `
+        this.innerHTML = `
 			    <div class="sides">
 			        <div class=" container-fluid ">
 			            <div class="left-side">
@@ -74,6 +73,7 @@ class Sides extends HTMLElement {
 			                    <a href="https://www.instagram.com/worrynoisedirtheat/" target="_blank"> Social </a>
                                 <a href="https://worrynoisedirtheat.bandcamp.com/music" target="_blank"> Store </a>
                                 <a href="https://fundraising.fracturedatlas.org/worry-noise-dirt-heat" target="_blank"> Support </a>
+                                <a href="mailto:support@worrynoisedirtheat@protonmail.com" target="_blank"> Contact </a>
 			                </div>
 			            </div>
 
@@ -87,7 +87,7 @@ class Sides extends HTMLElement {
 			    </div> 
 			    <!-- sides -->
 
-    `
+    `;
 
     }
 }
