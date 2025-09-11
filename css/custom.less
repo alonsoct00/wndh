@@ -22,6 +22,23 @@ body {
     }
 }
 
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.my-4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hidden-post {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
 #menu-menu-1>li:nth-child(4) {
     display: none;
 }
@@ -29,6 +46,83 @@ body {
 .atail-text-logo {
     height: 80px !important;
 }
+
+.atail-post-content img {
+    margin-block: 0;
+}
+
+figure {
+    figcaption {
+        font-size: 14px;
+        clear: both;
+        float: left;
+    }
+}
+
+.post-content-audio {
+    margin-bottom: 24px;
+    p {
+        margin-bottom: 0;
+        line-height: normal;
+        font-size: 16px;
+    }
+    .audio-player {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: #0f1724;
+        padding: 10px;
+        border-radius: 6px;
+        color: white;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 0 24px 0;
+
+        .play-btn {
+            background: #1f2937;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 4px;
+            padding: 8px;
+            min-width: 44px;
+            min-height: 44px;
+            cursor: pointer;
+            display: inline-flex;
+            width: auto;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .play-btn:focus {
+            outline: 2px solid #60a5fa;
+        }
+
+        .time {
+            font-size: 14px;
+        }
+
+        .progress {
+            flex: 1;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .progress-filled {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #60a5fa, #06b6d4);
+            border-radius: 5px;
+        }
+    }
+}
+
+
 
 
 
@@ -358,7 +452,8 @@ li.more-links.menu-item-has-children {
     }
 }
 
-#wndh-single-bulletins {
+#wndh-single-bulletins,
+#wndh-single-archives {
 
     .atail-post-navigation {
         text-transform: uppercase;
@@ -406,6 +501,24 @@ li.more-links.menu-item-has-children {
     }
 }
 
+#wndh-single-archives {
+    .blog-ctas {
+        .btn {
+            padding-block: 16px;
+        }
+
+        margin: 10px 0 20px 0
+    }
+    .tracklist {
+        margin: 20px 0;
+
+        li {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+    }
+}
+
 
 #wndh-archive {
     .right-side {
@@ -429,18 +542,19 @@ li.more-links.menu-item-has-children {
     }
 
 
-    .simple-post>.row:nth-child(odd)>div,
+    /*.simple-post>.row:nth-child(odd)>div,
     .simple-post>[class*=' row-col-']:nth-child(odd)>div,
     .simple-post>[class^=row-col-]:nth-child(odd)>div {
         left: 0;
-    }
+    }*/
 
     .simple-post {
         line-height: normal;
 
         small {
-            line-height: 1.2;
+            line-height: 1.4;
             display: block;
+            font-size: 16px;
         }
 
         .blog-info {
@@ -506,6 +620,18 @@ li.more-links.menu-item-has-children {
                 padding: 10px !important;
             }
         }
+
+        .blog-category-link,
+        .blog-info,
+        .blog-chars {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
 
     }
 }
@@ -636,9 +762,33 @@ li.more-links.menu-item-has-children {
 @media only screen and (min-width : 1200px) {
 
     #performed-posts {
+
         .blog-thumbnail,
         .blog-list-info {
             left: 33.332% !important;
+        }
+    }
+
+    .pushed-row {
+        position: relative;
+    }
+
+    .archive-post {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+        .blog-thumbnail {
+            display: inline-flex;
+        }
+
+        .blog-list-info {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-between;
         }
     }
 }
