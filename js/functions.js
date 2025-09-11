@@ -65,8 +65,7 @@ class NavMenu extends HTMLElement {
 //Sides
 class Sides extends HTMLElement {
     connectedCallback() {
-        this.innerHTML =
-            `
+        this.innerHTML = `
 			    <div class="sides">
 			        <div class=" container-fluid ">
 			            <div class="left-side">
@@ -74,6 +73,7 @@ class Sides extends HTMLElement {
 			                    <a href="https://www.instagram.com/worrynoisedirtheat/" target="_blank"> Social </a>
                                 <a href="https://worrynoisedirtheat.bandcamp.com/music" target="_blank"> Store </a>
                                 <a href="https://fundraising.fracturedatlas.org/worry-noise-dirt-heat" target="_blank"> Support </a>
+                                <a href="mailto:support@worrynoisedirtheat@protonmail.com" target="_blank"> Contact </a>
 			                </div>
 			            </div>
 
@@ -87,10 +87,78 @@ class Sides extends HTMLElement {
 			    </div> 
 			    <!-- sides -->
 
-    `
+    `;
 
     }
 }
 
 customElements.define('main-sides', Sides);
 customElements.define('main-header', NavMenu);
+
+
+function formatTime(sec) {
+  if (isNaN(sec)) return "0:00";
+  const m = Math.floor(sec / 60);
+  const s = Math.floor(sec % 60)
+    .toString()
+    .padStart(2, "0");
+  return `${m}:${s}`;
+}
+
+document.querySelectorAll(".audio-player").forEach((player) => {
+  const audio = new Audio(player.dataset.audio);
+  const btn = player.querySelector(".play-btn");
+  const current = player.querySelector(".current");
+  const duration = player.querySelector(".duration");
+  const progress = player.querySelector(".progress");
+  const filled = player.querySelector(".progress-filled");
+
+  // Play/Pause
+  btn.addEventListener("click", () => {
+    if (audio.paused) {
+      // Pausar otros audios
+      document.querySelectorAll(".audio-player").forEach((p) => {
+        if (p !== player) p.querySelector(".play-btn").textContent = "►";
+      });
+      document.querySelectorAll("audio").forEach((a) => a.pause());
+
+      audio.play();
+      btn.textContent = "⏸";
+      btn.setAttribute("aria-pressed", "true");
+      btn.setAttribute("aria-label", "Pausar");
+    } else {
+      audio.pause();
+      btn.textContent = "►";
+      btn.setAttribute("aria-pressed", "false");
+      btn.setAttribute("aria-label", "Reproducir");
+    }
+  });
+
+  // Metadata
+  audio.addEventListener("loadedmetadata", () => {
+    duration.textContent = formatTime(audio.duration);
+  });
+
+  // Progreso
+  audio.addEventListener("timeupdate", () => {
+    current.textContent = formatTime(audio.currentTime);
+    const percent = (audio.currentTime / audio.duration) * 100;
+    filled.style.width = `${percent}%`;
+    progress.setAttribute("aria-valuenow", Math.round(percent));
+  });
+
+  // Click en barra
+  progress.addEventListener("click", (e) => {
+    const rect = progress.getBoundingClientRect();
+    const ratio = (e.clientX - rect.left) / rect.width;
+    audio.currentTime = ratio * audio.duration;
+  });
+
+  // Teclado en barra
+  progress.addEventListener("keydown", (e) => {
+    if (["ArrowRight", "ArrowLeft"].includes(e.key)) {
+      const step = audio.duration * 0.05;
+      audio.currentTime += e.key === "ArrowRight" ? step : -step;
+    }
+  });
+});
