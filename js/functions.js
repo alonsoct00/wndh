@@ -73,14 +73,14 @@ class Sides extends HTMLElement {
 			                    <a href="https://www.instagram.com/worrynoisedirtheat/" target="_blank"> Social </a>
                                 <a href="https://worrynoisedirtheat.bandcamp.com/music" target="_blank"> Store </a>
                                 <a href="https://fundraising.fracturedatlas.org/worry-noise-dirt-heat" target="_blank"> Support </a>
-                                <a href="mailto:support@worrynoisedirtheat@protonmail.com" target="_blank"> Contact </a>
+                                <a href="mailto:worrynoisedirtheat@protonmail.com" target="_blank"> Contact </a>
 			                </div>
 			            </div>
 
 			            <div class="right-side">
 			                <div class="side-content">
 			                    <p class="copyright">
-			                        © 2023 Worry Noise Dirt Heat · <a href="https://gisselasaune.com/"  target="_blank" style="margin-right: 8px;"> Design by Gissela Sauñe</a> · <a href="https://www.alonsoct.dev/" target="_blank"> Custom by Alonso Caballero</a></p>
+			                        © 2023 Worry Noise Dirt Heat · <a href="https://gisselasaune.com.mx/"  target="_blank" style="margin-right: 8px;"> Design by Gissela Sauñe</a> · <a href="https://www.alonsoct.dev/" target="_blank"> Custom by Alonso Caballero</a></p>
 			                </div>
 			            </div>
 			        </div>
