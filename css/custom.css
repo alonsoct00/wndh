@@ -91,6 +91,14 @@ body::before {
   visibility: visible;
   content: "";
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #000;
+  font-family: 'Hind', sans-serif;
+}
 .my-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -118,6 +126,7 @@ figure figcaption {
   font-size: 14px;
   clear: both;
   float: left;
+  margin-top: 8px;
 }
 .post-content-audio {
   margin-bottom: 24px;
@@ -131,7 +140,7 @@ figure figcaption {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #0f1724;
+  background: #000;
   padding: 10px;
   border-radius: 6px;
   color: white;
@@ -140,7 +149,7 @@ figure figcaption {
   margin: 0 0 24px 0;
 }
 .post-content-audio .audio-player .play-btn {
-  background: #1f2937;
+  background: #000;
   border: none;
   color: white;
   font-size: 18px;
@@ -158,7 +167,7 @@ figure figcaption {
   font-family: initial;
 }
 .post-content-audio .audio-player .play-btn:focus {
-  outline: 2px solid #60a5fa;
+  outline: 2px solid #36fdda;
 }
 .post-content-audio .audio-player .time {
   font-size: 14px;
@@ -174,7 +183,7 @@ figure figcaption {
 .post-content-audio .audio-player .progress-filled {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #60a5fa, #06b6d4);
+  background: linear-gradient(90deg, #36fdda, #06b6d4);
   border-radius: 5px;
 }
 .bg-static {
@@ -467,12 +476,37 @@ li.more-links.menu-item-has-children {
 #wndh-single-archives .blog-ctas .btn {
   padding-block: 16px;
 }
+#wndh-single-archives .blog-ctas .btn:hover,
+#wndh-single-archives .blog-ctas .btn:focus {
+  background-color: #36fdda;
+  color: #000;
+}
+#wndh-single-archives .content-info-date,
+#wndh-single-archives small {
+  margin-bottom: 35px;
+  font-size: 0.875rem;
+  color: #000;
+}
 #wndh-single-archives .tracklist {
   margin: 20px 0;
 }
-#wndh-single-archives .tracklist li {
+#wndh-single-archives .tracklist ol {
+  padding-block: 0;
+  padding-inline: 20px;
+  margin: 16px 0;
+  list-style: auto;
+  font-family: 'Hind', sans-serif !important;
+}
+#wndh-single-archives .tracklist ol li {
   font-size: 16px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  padding-left: 4px;
+}
+#wndh-single-archives .tracklist ol li::before {
+  display: none;
+}
+#wndh-single-archives .tracklist ol li::marker {
+  margin-right: 4px;
 }
 #wndh-archive {
   /*.simple-post>.row:nth-child(odd)>div,
@@ -519,7 +553,7 @@ li.more-links.menu-item-has-children {
 }
 #wndh-archive .simple-post .blog-chars {
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hind', sans-serif;
   line-height: normal;
   font-weight: normal;
   color: #000;

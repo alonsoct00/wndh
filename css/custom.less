@@ -22,6 +22,15 @@ body {
     }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #000;
+    font-family: 'Hind', sans-serif;
+}
+
 .my-0 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -56,6 +65,7 @@ figure {
         font-size: 14px;
         clear: both;
         float: left;
+        margin-top: 8px;
     }
 }
 
@@ -70,7 +80,7 @@ figure {
         display: flex;
         align-items: center;
         gap: 10px;
-        background: #0f1724;
+        background: #000;
         padding: 10px;
         border-radius: 6px;
         color: white;
@@ -79,7 +89,7 @@ figure {
         margin: 0 0 24px 0;
 
         .play-btn {
-            background: #1f2937;
+            background: #000;
             border: none;
             color: white;
             font-size: 18px;
@@ -98,7 +108,7 @@ figure {
         }
 
         .play-btn:focus {
-            outline: 2px solid #60a5fa;
+            outline: 2px solid #36fdda;
         }
 
         .time {
@@ -117,7 +127,7 @@ figure {
         .progress-filled {
             height: 100%;
             width: 0%;
-            background: linear-gradient(90deg, #60a5fa, #06b6d4);
+            background: linear-gradient(90deg, #36fdda, #06b6d4);
             border-radius: 5px;
         }
     }
@@ -506,16 +516,39 @@ li.more-links.menu-item-has-children {
     .blog-ctas {
         .btn {
             padding-block: 16px;
+            &:hover, &:focus {
+                background-color: #36fdda;
+                color: #000;
+            }
         }
 
         margin: 10px 0 20px 0
     }
+    .content-info-date, small {
+        margin-bottom: 35px;
+        font-size: .875rem;
+        color: #000;
+    }
     .tracklist {
         margin: 20px 0;
 
-        li {
-            font-size: 16px;
-            margin-bottom: 6px;
+        ol {
+            padding-block: 0;
+            padding-inline: 20px;
+            margin: 16px 0;
+            list-style: auto;
+            font-family: 'Hind', sans-serif !important;
+            li {
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                    padding-left: 4px;
+                    &::before {
+                        display: none;
+                    }
+                    &::marker {
+                        margin-right: 4px;
+                    }
+                }
         }
     }
 }
@@ -581,7 +614,7 @@ li.more-links.menu-item-has-children {
 
         .blog-chars {
             font-size: 14px;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Hind', sans-serif;
             line-height: normal;
             font-weight: normal;
             color: #000;
