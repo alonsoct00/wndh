@@ -162,3 +162,17 @@ document.querySelectorAll(".audio-player").forEach((player) => {
     }
   });
 });
+
+// Función para volver atrás en el historial
+function goBack() {
+  if (document.referrer !== "") {
+    // Si hay una página previa, vuelve atrás
+    window.history.back();
+  } else {
+    // Si no hay historial (ej. entraste directo), redirige a una página por defecto
+    window.location.href = "index.html";
+  }
+}
+
+// Opcional: exponer la función en el objeto global para poder usarla en HTML
+window.goBack = goBack;
