@@ -1,101 +1,87 @@
-//Nav Menu
+/* =========================================================
+   HEADER COMPONENT
+   ========================================================= */
 class NavMenu extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML =
-            ` 
-        <header class="atail-header">
-            <div class=" container-fluid">
-                <div class="logo atail-logo-portrait">
-                    <a href="index.html">
-                        <span class="atail-text-logo">
-                            <img src="images/whdh_logo.svg" alt="WNDH">
-                        </span>
-                    </a>
-                </div>
-                <div class="show-nav">
-                    <span data-action="show-nav">
-                        <span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </span>
-                </div>
-                <nav class="row">
-                    <div class="grid-bg row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                    </div>
-                    <ol id="menu-menu-1" class="nav-list">
-                        <li class="menu-item col-xs-2 ">
-                            <a href="bulletins.html"><span>Bulletins</span></a>
-                        </li>
-                        <li class="menu-item  col-xs-2 ">
-                            <a href="archive.html"><span>Archive</span></a>
-                        </li>
-                        <li class="menu-item col-xs-2 ">
-                            <a href="bio.html"><span>Bio</span></a>
-                        </li>
-                        <li class="menu-item col-xs-2">
-                            <a href="current.html"><span>Current</span></a>
-                        </li>
-                        <li class="menu-item col-xs-2 ">
-                            <a href="blog.html"><span>Blog</span></a>
-                        </li>
-                        <li class="menu-item col-xs-2 ">
-                            <a href="typography.html"><span>Typography</span></a>
-                        </li>
-                    </ol>
-                </nav>
+  connectedCallback() {
+    this.innerHTML = `
+      <header class="atail-header">
+        <div class="container-fluid">
+          <div class="logo atail-logo-portrait">
+            <a href="index.html">
+              <span class="atail-text-logo">
+                <img src="images/whdh_logo.svg" alt="WNDH">
+              </span>
+            </a>
+          </div>
+          <div class="show-nav">
+            <span data-action="show-nav">
+              <span>
+                <span></span>
+                <span></span>
+              </span>
+            </span>
+          </div>
+          <nav class="row">
+            <div class="grid-bg row">
+              <div class="col-md-2"></div>
+              <div class="col-md-2"></div>
+              <div class="col-md-2"></div>
+              <div class="col-md-2"></div>
+              <div class="col-md-2"></div>
+              <div class="col-md-2"></div>
             </div>
-        </header>
-
-		`
-    }
-}
-
-
-
-
-
-
-//Sides
-class Sides extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-			    <div class="sides">
-			        <div class=" container-fluid ">
-			            <div class="left-side">
-			                <div class="side-content">
-			                    <a href="https://www.instagram.com/worrynoisedirtheat/" target="_blank"> Social </a>
-                                <a href="https://worrynoisedirtheat.bandcamp.com/music" target="_blank"> Store </a>
-                                <a href="https://fundraising.fracturedatlas.org/worry-noise-dirt-heat" target="_blank"> Support </a>
-                                <a href="mailto:worrynoisedirtheat@protonmail.com" target="_blank"> Contact </a>
-			                </div>
-			            </div>
-
-			            <div class="right-side">
-			                <div class="side-content">
-			                    <p class="copyright">
-			                        © 2023 Worry Noise Dirt Heat · <a href="https://gisselasaune.com.mx/"  target="_blank" style="margin-right: 8px;"> Design by Gissela Sauñe</a> · <a href="https://www.alonsoct.dev/" target="_blank"> Custom by Alonso Caballero</a></p>
-			                </div>
-			            </div>
-			        </div>
-			    </div> 
-			    <!-- sides -->
-
+            <ol id="menu-menu-1" class="nav-list">
+              <li class="menu-item col-xs-2"><a href="bulletins.html"><span>Bulletins</span></a></li>
+              <li class="menu-item col-xs-2"><a href="archive.html"><span>Archive</span></a></li>
+              <li class="menu-item col-xs-2"><a href="bio.html"><span>Bio</span></a></li>
+              <li class="menu-item col-xs-2"><a href="current.html"><span>Current</span></a></li>
+              <li class="menu-item col-xs-2"><a href="blog.html"><span>Blog</span></a></li>
+              <li class="menu-item col-xs-2"><a href="typography.html"><span>Typography</span></a></li>
+            </ol>
+          </nav>
+        </div>
+      </header>
     `;
-
-    }
+  }
 }
 
-customElements.define('main-sides', Sides);
-customElements.define('main-header', NavMenu);
+/* =========================================================
+   SIDES COMPONENT
+   ========================================================= */
+class Sides extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <div class="sides">
+        <div class="container-fluid">
+          <div class="left-side">
+            <div class="side-content">
+              <a href="https://www.instagram.com/worrynoisedirtheat/" target="_blank">Social</a>
+              <a href="https://worrynoisedirtheat.bandcamp.com/music" target="_blank">Store</a>
+              <a href="https://fundraising.fracturedatlas.org/worry-noise-dirt-heat" target="_blank">Support</a>
+              <a href="mailto:worrynoisedirtheat@protonmail.com" target="_blank">Contact</a>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="side-content">
+              <p class="copyright">
+                © 2023 Worry Noise Dirt Heat · 
+                <a href="https://gisselasaune.com.mx/" target="_blank" style="margin-right: 8px;">Design by Gissela Sauñe</a> · 
+                <a href="https://www.alonsoct.dev/" target="_blank">Custom by Alonso Caballero</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+}
 
+customElements.define("main-sides", Sides);
+customElements.define("main-header", NavMenu);
 
+/* =========================================================
+   AUDIO PLAYER
+   ========================================================= */
 function formatTime(sec) {
   if (isNaN(sec)) return "0:00";
   const m = Math.floor(sec / 60);
@@ -106,6 +92,8 @@ function formatTime(sec) {
 }
 
 document.querySelectorAll(".audio-player").forEach((player) => {
+  if (!player.dataset.audio) return; // seguridad
+
   const audio = new Audio(player.dataset.audio);
   const btn = player.querySelector(".play-btn");
   const current = player.querySelector(".current");
@@ -118,7 +106,10 @@ document.querySelectorAll(".audio-player").forEach((player) => {
     if (audio.paused) {
       // Pausar otros audios
       document.querySelectorAll(".audio-player").forEach((p) => {
-        if (p !== player) p.querySelector(".play-btn").textContent = "►";
+        if (p !== player) {
+          const otherBtn = p.querySelector(".play-btn");
+          if (otherBtn) otherBtn.textContent = "►";
+        }
       });
       document.querySelectorAll("audio").forEach((a) => a.pause());
 
@@ -163,16 +154,48 @@ document.querySelectorAll(".audio-player").forEach((player) => {
   });
 });
 
+/* =========================================================
+   NAVIGATION (HISTORY)
+   ========================================================= */
+   // Forzar recarga real al usar los botones del navegador
+window.addEventListener("pageshow", function (event) {
+  // Si la navegación vino del cache del navegador (bfcache)
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 // Función para volver atrás en el historial
 function goBack() {
   if (document.referrer !== "") {
-    // Si hay una página previa, vuelve atrás
     window.history.back();
+
+    // Escuchar el cambio de estado una sola vez y recargar
+    window.addEventListener(
+      "popstate",
+      () => location.reload(),
+      { once: true }
+    );
   } else {
     // Si no hay historial (ej. entraste directo), redirige a una página por defecto
-    window.location.href = "index.html";
+    window.location.href = "/";
   }
 }
 
-// Opcional: exponer la función en el objeto global para poder usarla en HTML
+// Función para ir adelante en el historial
+function goForward() {
+  window.history.forward();
+
+  // Escuchar el cambio de estado una sola vez y recargar
+  window.addEventListener(
+    "popstate",
+    () => location.reload(),
+    { once: true }
+  );
+}
+
+// Exponer funciones en el objeto global para usarlas en HTML
 window.goBack = goBack;
+window.goForward = goForward;
+
+
