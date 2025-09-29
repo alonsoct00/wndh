@@ -470,6 +470,30 @@ li.more-links.menu-item-has-children {
 #wndh-single-archives figcaption {
   color: #000;
 }
+#wndh-single-bulletins ul,
+#wndh-single-archives ul {
+  padding-block: 0;
+  padding-inline: 20px;
+  margin: 16px 0;
+  list-style: initial;
+  font-family: 'Hind', sans-serif !important;
+}
+#wndh-single-bulletins ul li,
+#wndh-single-archives ul li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  padding-left: 4px;
+  color: #000;
+  line-height: normal;
+}
+#wndh-single-bulletins ul li::before,
+#wndh-single-archives ul li::before {
+  display: none;
+}
+#wndh-single-bulletins ul li::marker,
+#wndh-single-archives ul li::marker {
+  margin-right: 4px;
+}
 #wndh-single-archives .blog-ctas {
   margin: 10px 0 20px 0;
 }

@@ -512,6 +512,30 @@ li.more-links.menu-item-has-children {
     figcaption {
         color: #000;
     }
+
+        ul {
+            padding-block: 0;
+            padding-inline: 20px;
+            margin: 16px 0;
+            list-style: initial;
+            font-family: 'Hind', sans-serif !important;
+    
+            li {
+                font-size: 18px;
+                margin-bottom: 12px;
+                padding-left: 4px;
+                color: #000;
+                line-height: normal;
+    
+                &::before {
+                    display: none;
+                }
+    
+                &::marker {
+                    margin-right: 4px;
+                }
+            }
+        }
 }
 
 #wndh-single-archives {
