@@ -466,6 +466,20 @@ li.more-links.menu-item-has-children {
   font-weight: 300;
   font-size: 18px;
 }
+#wndh-single-bulletins .post-content-text p a,
+#wndh-single-archives .post-content-text p a {
+  color: #000;
+  font-weight: 300 !important;
+  font-size: 17px !important;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-decoration: underline;
+}
+#wndh-single-bulletins .post-content-text p a:hover,
+#wndh-single-archives .post-content-text p a:hover {
+  color: #333;
+  text-decoration: underline;
+}
 #wndh-single-bulletins figcaption,
 #wndh-single-archives figcaption {
   color: #000;
