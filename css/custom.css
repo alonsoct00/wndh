@@ -725,10 +725,6 @@ li.more-links.menu-item-has-children {
   font-size: 12px !important;
   padding: 10px !important;
 }
-#aawn-main .atail-post-title img {
-  object-fit: scale-down !important;
-  height: auto;
-}
 @media only screen and (min-width: 1200px) {
   #performed-posts .blog-thumbnail,
   #performed-posts .blog-list-info {
